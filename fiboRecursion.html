@@ -1,0 +1,25 @@
+<html>  
+<head>  
+<title> Fibonacci Series Using Recursion </title>  
+</head>  
+<body>  
+<script>  
+document.write( "Fibonacci Series: ");  
+
+
+  function fibo(num)
+{
+    if(num<2)
+    return num;
+    else
+    return fibo(num-1) + fibo(num-2);
+}
+const  num = (prompt (" Enter the limit for Fibonacci Series "));  
+for(let i = 0; i<num;i++)
+{
+   
+    document.write("<br>"  +fibo(i));
+}
+</script>  
+</body>  
+</html>  
